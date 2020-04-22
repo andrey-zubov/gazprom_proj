@@ -1,0 +1,66 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+/* ШАПКА */
+header{
+    padding: 20px;
+    margin: 0;    
+    background-color: #122A3B;
+    max-height: 140px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+/* .container{
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+} */
+
+
+.logo{
+    display: inline-block;
+    width: 138px;
+    height: 138px;
+    margin: 0;
+    padding: 0;
+}
+
+/* .user-info{
+    ;
+} */
+
+.user-info-txt{
+    font-size: 16px;
+    display: block;
+    color: white;
+    margin: 0 auto;
+    margin-right: 40px;
+    margin-top: 20px;
+}
+
+/* МЕНЮ */
+
+nav{
+    width: 100wh;
+    max-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.nav-element{
+    font-size: 20px;
+    color: #00233B;
+    margin: 0;
+    padding: 0;
+}
