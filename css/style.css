@@ -1,6 +1,105 @@
-.logo{
-    width: 100px;
-    height: 80px;
-    background: url(img/gazpromlogo.png);
+body{
+    margin: 0;
+    padding: 0;
 }
 
+a{
+    text-decoration: none;
+    font-family: 'FiraSans';
+}
+.invisible{
+    visibility: hidden;
+}
+/* ШАПКА */
+header{
+    padding: 20px;
+    margin: 0;    
+    background-color: #122A3B;
+    max-height: 140px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.logo{
+    display: inline-block;
+    width: 138px;
+    height: 138px;
+    margin: 0;
+    padding: 0;
+}
+
+/* .user-info{
+    ;
+} */
+
+.user-info-txt{
+    font-size: 18px;
+    display: block;
+    color: white;
+    margin: 0 auto;
+    margin-right: 40px;
+    margin-top: 20px;
+}
+
+/* МЕНЮ */
+
+nav{
+    width: 100wh;
+    max-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.nav-element{
+    font-size: 22px;
+    color: #00233B;
+    margin: 0;
+    padding: 0;
+}
+/* CONTENT */
+
+.container{
+    max-width: 1200px;
+    /* margin: 0 auto; */
+    margin-left: 85px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-self: start;
+}
+
+.search-field{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-textfield{
+    width: 250px;
+    height: 40px;
+    border: solid 1px #00233B;
+    padding: 4px;
+    font-family: 'FiraSans';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-button{
+    background: white;
+    box-shadow: 0px 0px 0px transparent;
+    border: 0px solid transparent;
+    text-shadow: 0px 0px 0px transparent;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.search-icon{
+    height: 40px;
+    padding: 4px;
+}
