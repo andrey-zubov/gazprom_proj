@@ -7,6 +7,12 @@ a{
     text-decoration: none;
     font-family: 'FiraSans';
 }
+
+p{
+    max-width: 150px;
+    text-align: center;
+}
+
 .invisible{
     visibility: hidden;
 }
@@ -80,7 +86,7 @@ nav{
 }
 
 .search-textfield{
-    width: 250px;
+    width: 400px;
     height: 40px;
     border: solid 1px #00233B;
     padding: 4px;
@@ -102,4 +108,93 @@ nav{
 .search-icon{
     height: 40px;
     padding: 4px;
+}
+
+.action-list-headliner{
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.action-list-txt{
+    margin-right: 40px;
+    text-decoration: underline;
+    font-size: 20px;
+}
+
+.action-list{
+    height: 800px;
+    margin-left:84px ;
+}
+
+.checkboxes{
+    display: flex;
+    flex-direction: column;
+}
+/* СТИЛИ ТАБЛИЦЫ */
+
+td{
+    border: solid 1px #00233B;
+    font-family: 'FiraSans';
+}
+
+.td-containers{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.number-table-cell{
+    width: 80px;
+    height: 80px;
+}
+
+.email-table-cell{
+    height: 80px;
+    width: 230px;
+}
+
+.initials-table-cell{
+    height: 80px;
+    width: 80px;
+}
+
+.login-table-cell{
+    height: 80px;
+    width: 230px;
+}
+
+.usertype-table-cell{
+    height: 80px;
+    width: 200px;
+}
+
+.subdivision-table-cell{
+    height: 80px;
+    width: 200px;
+}
+
+.position-table-cell{
+    height: 80px;
+    width: 150px;
+}
+
+.creationdate-table-cell{
+    height: 80px;
+    width: 200px;
+}
+
+.editdate-table-cell{
+    height: 80px;
+    width: 200px;
+}
+
+.actionlist-table-cell{
+    height: 80px;
+    width: 150px;
+}
+
+.active-cell{
+    height: 200px;
 }
