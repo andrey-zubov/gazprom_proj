@@ -198,3 +198,28 @@ td{
 .active-cell{
     height: 200px;
 }
+/* КОНЕЦ ТАБЛИЧНЫХ СТИЛЕЙ */
+
+#buttonsfield{
+    margin-left: 84px;
+    padding-bottom: 80px;
+}
+
+.buttons-container{
+    display: flex;
+    align-items: center;
+}
+.button{
+    border: none;
+    color: inherit;
+    background-color: transparent;
+    padding: 10px;
+    cursor: pointer;
+    font: 'FiraSans';
+    color: white;
+    width: 200px;
+    height: 50px;
+    background-color: #3B4FBF;
+    border-radius: 5px;
+    margin-right: 20px;
+}
