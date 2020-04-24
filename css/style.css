@@ -118,7 +118,7 @@ nav{
 }
 
 .action-list-txt{
-    margin-right: 40px;
+    margin-right: 80px;
     text-decoration: underline;
     font-size: 20px;
 }
@@ -243,4 +243,50 @@ li{
 li a{
     font-size: 25px;
     
+}
+
+/*КОНЕЦ СТИЛЕЙ СПРАВОЧНИКОВ*/
+
+/* СТИЛИ ДЛЯ УВЕДОМЛЕНИЙ */
+
+/* not === notification */
+
+.notifications-list-container{
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 40px;
+    height: 600px;
+    overflow: scroll;
+    margin-bottom: 100px;
+}
+
+/* .notification-table{
+    height: 300px;
+    overflow: scroll;
+} */
+
+.not-default{
+    height: 40px;
+    /* padding-top: 10px;
+    padding-bottom: 10px; */
+}
+
+.notification-status{
+    width: 80px;
+}
+
+.notification-date{
+    width: 400px;
+    
+}
+.notification-cell{
+    width: 800px;
+}
+
+.active-not-cont{
+    
+}
+
+.active-not-txt{
+    max-width: 300px;
 }
