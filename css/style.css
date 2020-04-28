@@ -5,12 +5,13 @@ body{
 
 a{
     text-decoration: none;
-    font-family: 'FiraSans';
+    font-family: 'Roboto';
 }
 
 p{
     max-width: 150px;
     text-align: center;
+    font-family: 'Roboto' ;
 }
 
 .invisible{
@@ -20,25 +21,26 @@ p{
 header{
     padding: 20px;
     margin: 0;    
-    background-color: #122A3B;
-    max-height: 140px;
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(13,96,209,1) 100%);
+    max-height: 200px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     
 }
 
+.bold{
+    font-weight: 600;
+}
+
 .logo{
     display: inline-block;
-    width: 138px;
+    width: 276px;
     height: 138px;
     margin: 0;
     padding: 0;
+    margin-left: 44px;
 }
-
-/* .user-info{
-    ;
-} */
 
 .user-info-txt{
     font-size: 18px;
@@ -62,10 +64,11 @@ nav{
 }
 
 .nav-element{
-    font-size: 22px;
-    color: #00233B;
+    font-size: 28px;
+    color: #0d60d1;
     margin: 0;
     padding: 0;
+    font-weight: 600;
 }
 /* CONTENT */
 
@@ -90,7 +93,7 @@ nav{
     height: 40px;
     border: solid 1px #00233B;
     padding: 4px;
-    font-family: 'FiraSans';
+    font-family: 'Roboto';
     display: flex;
     justify-content: center;
     align-items: center;
@@ -125,7 +128,8 @@ nav{
 
 .action-list{
     height: 800px;
-    margin-left:84px ;
+    display: flex;
+    /* margin-left: 84px; */
 }
 
 .checkboxes{
@@ -136,7 +140,8 @@ nav{
 
 td{
     border: solid 1px #00233B;
-    font-family: 'FiraSans';
+    font-family: 'Roboto';
+    font-size: 17px;
 }
 
 .td-containers{
@@ -144,6 +149,14 @@ td{
     align-items: center;
     justify-content: center;
 }
+
+.table{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* ТАБЛИЦА АДМИНИСТРИРОВАНИЯ */
 
 .number-table-cell{
     width: 80px;
@@ -196,7 +209,8 @@ td{
 }
 
 .active-cell{
-    height: 200px;
+    height: 150px;
+    max-height: 400px;
 }
 /* КОНЕЦ ТАБЛИЧНЫХ СТИЛЕЙ */
 
@@ -215,11 +229,11 @@ td{
     background-color: transparent;
     padding: 10px;
     cursor: pointer;
-    font: 'FiraSans';
+    font: 'Roboto';
     color: white;
     width: 200px;
     height: 50px;
-    background-color: #122A3B;
+    background-color: #0d60d1;
     border-radius: 5px;
     margin-right: 20px;
 }
@@ -283,10 +297,55 @@ li a{
     width: 800px;
 }
 
-.active-not-cont{
-    
-}
-
 .active-not-txt{
     max-width: 300px;
+}
+
+/* ПЛАНИРОВАНИЕ */
+
+.planning-content{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    margin-top: 50px;
+}
+
+/* ТАБЛИЦА ПЛАНИРОВАНИЯ */
+
+.financing-item{
+    width: 300px;
+    height: 80px;
+    font-size: 24px;
+}
+
+.quarters{
+    height: 80px;
+    width: 200px;
+    font-size: 24px;
+}
+
+.total{
+    height: 80px;
+    width: 200px;
+    font-size: 24px;
+}
+
+.active-financing-item{
+    text-decoration: underline;
+    width: 300px;
+    height: 80px;
+    font-size: 24px;
+}
+
+/* КОНЕЦ ТАБЛИЦЫ ПЛАНИРОВАНИЯ */
+
+.drop-list-container{
+    margin-left: 30px;
+}
+
+.plans-buttonsfield{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
 }
