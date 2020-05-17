@@ -160,8 +160,9 @@ td{
 
 .table-cont{
     width: 100%;
-    display: flex;
-    justify-content: center;
+    /* display: flex;
+    justify-content: center; */
+    overflow-x:auto;
 }
 
 /* ТАБЛИЦА АДМИНИСТРИРОВАНИЯ */
@@ -318,6 +319,10 @@ li a{
     margin-top: 50px;
 }
 
+.planning-table{
+    overflow-x:auto;
+}
+
 /* ТАБЛИЦА ПЛАНИРОВАНИЯ */
 
 .financing-item{
@@ -399,6 +404,7 @@ li a{
 
 .sign-in-button .button{
     width: 100px;
+    height: 40px;
 }
 
 @media(max-width:1223px){
@@ -442,8 +448,9 @@ li a{
    }
 
    .button{
-       margin-top: 10px;
-       margin-bottom: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
    }
 
 }
+
