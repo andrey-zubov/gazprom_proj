@@ -147,7 +147,8 @@ nav{
 
 .action-list{
     display: flex;
-    /* margin-left: 84px; */
+    margin-left: 84px;
+    
     margin-bottom: 50px;
 }
 
@@ -163,75 +164,32 @@ td{
     font-size: 17px;
 }
 
-.td-containers{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .table-cont{
     width: 100%;
-    display: flex;
-    justify-content: center;
+    /* display: flex;
+    justify-content: center; */
     overflow-x:auto;
+}
+
+table{
+    border-collapse: collapse;
 }
 
 /* ТАБЛИЦА АДМИНИСТРИРОВАНИЯ */
 
-.number-table-cell{
-    width: 80px;
-    height: 80px;
+th{
+    border: 1px solid black;
+    font-family: "Roboto";
+    padding: 40px 20px 40px 20px;
 }
 
-.email-table-cell{
-    height: 80px;
-    width: 230px;
+td{
+    padding: 20px;
+    text-align: center;
+    padding: 40px 20px 40px 20px;
 }
 
-.initials-table-cell{
-    height: 80px;
-    width: 80px;
-}
 
-.login-table-cell{
-    height: 80px;
-    width: 230px;
-}
-
-.usertype-table-cell{
-    height: 80px;
-    width: 200px;
-}
-
-.subdivision-table-cell{
-    height: 80px;
-    width: 200px;
-}
-
-.position-table-cell{
-    height: 80px;
-    width: 150px;
-}
-
-.creationdate-table-cell{
-    height: 80px;
-    width: 200px;
-}
-
-.editdate-table-cell{
-    height: 80px;
-    width: 200px;
-}
-
-.actionlist-table-cell{
-    height: 80px;
-    width: 150px;
-}
-
-.active-cell{
-    height: 150px;
-    max-height: 400px;
-}
 /* КОНЕЦ ТАБЛИЧНЫХ СТИЛЕЙ */
 
 #buttonsfield{
@@ -444,8 +402,12 @@ li a{
    }
 
    .action-list-headliner{
-       justify-content: flex-end;
+       justify-content: center;
        align-items: center;
+   }
+
+   .action-list-txt{
+       margin-right: 0;
    }
 
    .container{
@@ -463,77 +425,8 @@ li a{
         margin-bottom: 10px;
    }
 
+   .table-cont{
+       width: 855px;
+   }
 }
 /* 
-table {
-    user-select: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-}
-
-.jsdragtable-contents {
-    background: #fff;
-    user-select: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    box-shadow: 2px 2px 5px #aaa;
-    padding: 0;
-}
-
-.jsdragtable-contents table {
-    margin-bottom: 0;
-}
-
-.table {
-    width: 100%;
-    max-width: 100%;
-    margin-bottom: 20px;
-}
-
-tbody>tr>td,thead>tr>th {
-    padding: 8px;
-    line-height: 1.42857143;
-    vertical-align: top;
-    border-top: 1px solid #ddd
-}
-
-thead>tr>th {
-    vertical-align: bottom;
-    border-bottom: 2px solid #ddd
-}
-
-
-.table-bordered {
-    border: 1px solid #ddd;
-}
-
-.table-bordered>tbody>tr>td,.table-bordered>thead>tr>th {
-    border: 1px solid #ddd
-}
-
-.table-bordered>thead>tr>th {
-    border-bottom-width: 2px;
-    background-color: yellow;
-}
-
-.table-hover>tbody>tr:hover {
-    background-color: #f5f5f5
-}
-        
-.table-bordered>thead>tr>th.over {
-    border: 2px dashed #000;
-}
-
-[draggable] {
-  -moz-user-select: none;
-  -khtml-user-select: none;
-  -webkit-user-select: none;
-  user-select: none;
-  /* Required to make elements draggable in old WebKit */
-  -khtml-user-drag: element;
-  -webkit-user-drag: element;
-}
-
-th{
-    cursor:move; */
-}
