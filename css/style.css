@@ -3,6 +3,17 @@ body{
     padding: 0;
 }
 
+
+/* body {background-color: #f9f9f9}
+.container {margin-top: 20px;}
+th[draggable] a,
+th[draggable] {cursor: move;}
+th[draggable] a:hover,
+th[draggable] a {display: block; text-decoration: none; color: #333333;}
+.drag {background-color: rgba(0, 0, 0, 0.25); opacity: 0.25}
+.dnd-drag {opacity: 0.25}
+.over {background-color: rgba(0, 0, 255, 0.35);} */
+
 a{
     text-decoration: none;
     font-family: 'Roboto';
@@ -160,8 +171,8 @@ td{
 
 .table-cont{
     width: 100%;
-    /* display: flex;
-    justify-content: center; */
+    display: flex;
+    justify-content: center;
     overflow-x:auto;
 }
 
@@ -453,4 +464,76 @@ li a{
    }
 
 }
+/* 
+table {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+}
 
+.jsdragtable-contents {
+    background: #fff;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    box-shadow: 2px 2px 5px #aaa;
+    padding: 0;
+}
+
+.jsdragtable-contents table {
+    margin-bottom: 0;
+}
+
+.table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+tbody>tr>td,thead>tr>th {
+    padding: 8px;
+    line-height: 1.42857143;
+    vertical-align: top;
+    border-top: 1px solid #ddd
+}
+
+thead>tr>th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #ddd
+}
+
+
+.table-bordered {
+    border: 1px solid #ddd;
+}
+
+.table-bordered>tbody>tr>td,.table-bordered>thead>tr>th {
+    border: 1px solid #ddd
+}
+
+.table-bordered>thead>tr>th {
+    border-bottom-width: 2px;
+    background-color: yellow;
+}
+
+.table-hover>tbody>tr:hover {
+    background-color: #f5f5f5
+}
+        
+.table-bordered>thead>tr>th.over {
+    border: 2px dashed #000;
+}
+
+[draggable] {
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  /* Required to make elements draggable in old WebKit */
+  -khtml-user-drag: element;
+  -webkit-user-drag: element;
+}
+
+th{
+    cursor:move; */
+}

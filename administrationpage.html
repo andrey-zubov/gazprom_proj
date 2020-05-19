@@ -6,6 +6,8 @@
     <title>Administration</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/fonts.css">
+    <script src="script/jquery-3.5.1.min.js"></script>
+    <script src="script/script.js"></script>    
 </head>
 <body>
     
@@ -72,263 +74,177 @@
             <div class="table-cont">   
                 
                 <table class="table">
-                    
-                    <tr>
+                    <thead>
+                        <tr>
+                            <th draggable="true">
+                                №
+                            </th>
+    
+                            <th draggable="true">
+                                E-mail
+                            </th>
+    
+                            <th draggable="true">
+                                ФИО
+                            </th>
+    
+                            <th draggable="true">
+                                Login
+                            </th>
+    
+                            <th draggable="true">
+                                Тип Пользователя
+                            </th>
+    
+                            <th draggable="true">
+                                Подразделение
+                            </th>
+    
+                            <th draggable="true">
+                                Должность
+                            </th>
+    
+                            <th draggable="true">
+                                Дата создания
+                            </th>
+    
+                            <th draggable="true">
+                                Дата редактирования
+                            </th>
+    
+                            <th draggable="true">
+                                Журнал действий
+                            </th>
+                        </tr>
+                    </thead>
 
-                        <td class="number-table-cell head-cell first-row-vert" draggable="true">
-                            <div class="td-containers">
-                                <p>№</p>
-                            </div>
-                        </td>
+                    <tbody>
+                        <tr>
+                            <td>
+                                1
+                            </td>
 
-                        <td class="email-table-cell head-cell" draggable="true">
-                            <div class="td-containers">
-                                <p>Email</p>
-                            </div>
-                        </td>
+                            <td>
+                                xxxxxxx@xxx.xxx
+                            </td>
 
-                        <td class="initials-table-cell head-cell " draggable="true">
-                            <div class="td-containers">
-                                <p>ФИО</p>
-                            </div>
-                        </td>
+                            <td>
+                                ФИО
+                            </td>
 
-                        <td class="login-table-cell head-cell" draggable="true">
-                            <div class="td-containers">
-                                <p>Login</p>
-                            </div>
-                        </td>
+                            <td>
+                                xxxxxxx@xxx.xxx
+                            </td>
 
-                        <td class="usertype-table-cell head-cell" draggable="true">
-                            <div class="td-containers">
-                                <p>Тип пользователя</p>
-                            </div>
-                        </td>
+                            <td>
+                                Администратор 
+                            </td>
 
-                        <td class="subdivision-table-cell head-cell" draggable="true">
-                            <div class="td-containers">
-                                <p>Подразделение</p>
-                            </div>
-                        </td>
-                        
-                        <td class="position-table-cell head-cell" draggable="true">
-                            <div class="td-containers">
-                                <p>Должность</p>
-                            </div>
-                        </td>
+                            <td>
+                                АСУ
+                            </td> 
 
-                        <td class="creationdate-table-cell head-cell" draggable="true">
-                            <div class="td-containers">
-                                <p>Дата создания</p>
-                            </div>
-                        </td>
+                            <td>
+                                Начальник АСУ   
+                            </td>
 
-                        <td class="editdate-table-cell head-cell" draggable="true">
-                            <div class="td-containers">
-                                <p>Дата редактирования</p>
-                            </div>
-                        </td>
-                        
-                        <td class="actionlist-table-cell head-cell" draggable="true">
-                            <div class="td-containers">
-                                <p>Журнал действий</p>
-                            </div>
-                        </td>
+                            <td>
+                                Согласно дате и времени АРМ
+                            </td>
 
-                    </tr>
-                    
-                    <tr>
+                            <td>
+                                Согласно дате и времени АРМ
+                            </td>
 
-                        <td class="active-cell number-table-cell first-row-vert">
-                            <div class="td-containers">
-                                <p>1</p>
-                            </div>
-                        </td>
+                            <td>
+                                Ж1
+                            </td>
+                        </tr>
 
-                        <td class="active-cell email-table-cell">
-                            <div class="td-containers">
-                                <p>xxxxxxxx@xxxxx.xxx</p>
-                            </div>
-                        </td>
+                        <tr>
+                            <td>
+                                2
+                            </td>
 
-                        <td class="active-cell initials-table-cell">
-                            <div class="td-containers">
-                                <p>ФИО</p>
-                            </div>
-                        </td>
+                            <td>
+                                xxxxxxx@xxx.xxx
+                            </td>
 
-                        <td class="active-cell login-table-cell">
-                            <div class="td-containers">
-                                <p>xxxxxxxx@xxxxx.xxx</p>
-                            </div>
-                        </td>
+                            <td>
+                                ФИО
+                            </td>
 
-                        <td class="active-cell usertype-table-cell">
-                            <div class="td-containers">
-                                <p>Администратор</p>
-                            </div>
-                        </td>
+                            <td>
+                                xxxxxxx@xxx.xxx
+                            </td>
 
-                        <td class="active-cell subdivision-table-cell">
-                            <div class="td-containers">
-                                <p>АСУ</p>
-                            </div>
-                        </td>
-                        
-                        <td class="active-cell position-table-cell">
-                            <div class="td-containers">
-                                <p>Начальник АСУ</p>
-                            </div>
-                        </td>
+                            <td>
+                                Администратор 
+                            </td>
 
-                        <td class="active-cell creationdate-table-cell">
-                            <div class="td-containers">
-                                <p>Согласно  дате и времени APM</p>
-                            </div>
-                        </td>
+                            <td>
+                                АСУ
+                            </td> 
 
-                        <td class="active-cell editdate-table-cell">
-                            <div class="td-containers">
-                                <p>Согласно  дате и времени APM</p>
-                            </div>
-                        </td>
-                        
-                        <td class="active-cell actionlist-table-cell">
-                            <div class="td-containers">
-                                <a href="">Ж1</a>
-                            </div>
-                        </td>
+                            <td>
+                                Начальник АСУ   
+                            </td>
 
-                    </tr>
+                            <td>
+                                Согласно дате и времени АРМ
+                            </td>
 
-                    <tr>
+                            <td>
+                                Согласно дате и времени АРМ
+                            </td>
 
-                        <td class="active-cell number-table-cell first-row-vert">
-                            <div class="td-containers">
-                                <p>2</p>
-                            </div>
-                        </td>
+                            <td>
+                                Ж2
+                            </td>
+                        </tr>
 
-                        <td class="active-cell email-table-cell">
-                            <div class="td-containers">
-                                <p>xxxxxxxx@xxxxx.xxx</p>
-                            </div>
-                        </td>
+                        <tr>
+                            <td>
+                                3
+                            </td>
 
-                        <td class="active-cell initials-table-cell">
-                            <div class="td-containers">
-                                <p>ФИО</p>
-                            </div>
-                        </td>
+                            <td>
+                                xxxxxxx@xxx.xxx
+                            </td>
 
-                        <td class="active-cell login-table-cell">
-                            <div class="td-containers">
-                                <p>xxxxxxxx@xxxxx.xxx</p>
-                            </div>
-                        </td>
+                            <td>
+                                ФИО
+                            </td>
 
-                        <td class="active-cell usertype-table-cell">
-                            <div class="td-containers">
-                                <p>Администратор</p>
-                            </div>
-                        </td>
+                            <td>
+                                xxxxxxx@xxx.xxx
+                            </td>
 
-                        <td class="active-cell subdivision-table-cell">
-                            <div class="td-containers">
-                                <p>АСУ</p>
-                            </div>
-                        </td>
-                        
-                        <td class="active-cell position-table-cell">
-                            <div class="td-containers">
-                                <p>Начальник АСУ</p>
-                            </div>
-                        </td>
+                            <td>
+                                Администратор 
+                            </td>
 
-                        <td class="active-cell creationdate-table-cell">
-                            <div class="td-containers">
-                                <p>Согласно  дате и времени APM</p>
-                            </div>
-                        </td>
+                            <td>
+                                АСУ
+                            </td> 
 
-                        <td class="active-cell editdate-table-cell">
-                            <div class="td-containers">
-                                <p>Согласно  дате и времени APM</p>
-                            </div>
-                        </td>
-                        
-                        <td class="active-cell actionlist-table-cell">
-                            <div class="td-containers">
-                                <a href="">Ж2</a>
-                            </div>
-                        </td>
+                            <td>
+                                Начальник АСУ   
+                            </td>
 
-                    </tr>
+                            <td>
+                                Согласно дате и времени АРМ
+                            </td>
 
-                    <tr>
+                            <td>
+                                Согласно дате и времени АРМ
+                            </td>
 
-                        <td class="active-cell number-table-cell first-row-vert">
-                            <div class="td-containers">
-                                <p>3</p>
-                            </div>
-                        </td>
-
-                        <td class="active-cell email-table-cell">
-                            <div class="td-containers">
-                                <p>xxxxxxxx@xxxxx.xxx</p>
-                            </div>
-                        </td>
-
-                        <td class="active-cell initials-table-cell">
-                            <div class="td-containers">
-                                <p>ФИО</p>
-                            </div>
-                        </td>
-
-                        <td class="active-cell login-table-cell">
-                            <div class="td-containers">
-                                <p>xxxxxxxx@xxxxx.xxx</p>
-                            </div>
-                        </td>
-
-                        <td class="active-cell usertype-table-cell">
-                            <div class="td-containers">
-                                <p>Администратор</p>
-                            </div>
-                        </td>
-
-                        <td class="active-cell subdivision-table-cell">
-                            <div class="td-containers">
-                                <p>АСУ</p>
-                            </div>
-                        </td>
-                        
-                        <td class="active-cell position-table-cell">
-                            <div class="td-containers">
-                                <p>Начальник АСУ</p>
-                            </div>
-                        </td>
-
-                        <td class="active-cell creationdate-table-cell">
-                            <div class="td-containers">
-                                <p>Согласно  дате и времени APM</p>
-                            </div>
-                        </td>
-
-                        <td class="active-cell editdate-table-cell">
-                            <div class="td-containers">
-                                <p>Согласно  дате и времени APM</p>
-                            </div>
-                        </td>
-                        
-                        <td class="active-cell actionlist-table-cell">
-                            <div class="td-containers">
-                                <a href="">Ж3</a>
-                            </div>
-                        </td>
-
-                    </tr>
-
+                            <td>
+                                Ж3
+                            </td>
+                        </tr>
+                    </tbody>
                 </table>
 
             </div>
